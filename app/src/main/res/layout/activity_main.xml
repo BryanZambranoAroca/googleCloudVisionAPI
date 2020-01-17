@@ -1,0 +1,104 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginRight="139dp"
+        android:layout_marginBottom="242dp"
+        android:layout_x="219dp"
+        android:layout_y="289dp"
+        android:onClick="selecImg"
+        android:text="Cargar" />
+
+    <ImageView
+        android:id="@+id/imvImagen"
+        android:layout_width="390dp"
+        android:layout_height="288dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_x="6dp"
+        android:layout_y="1dp"
+        android:src="@drawable/picture" />
+
+    <TextView
+        android:id="@+id/txtDatos"
+        android:layout_width="385dp"
+        android:layout_height="133dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="461dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="3dp"
+        android:layout_x="11dp"
+        android:layout_y="466dp"
+        android:scrollbars="vertical"
+        android:textSize="14sp"
+        android:verticalScrollbarPosition="right"
+        app:fontFamily="@font/ubuntu_light" />
+
+    <Button
+        android:id="@+id/btnProcesar"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginBottom="204dp"
+        android:layout_x="221dp"
+        android:layout_y="376dp"
+        android:onClick="ejecutarOpcion"
+        android:text="procesar" />
+
+    <ListView
+        android:id="@+id/lstOpciones"
+        android:layout_width="208dp"
+        android:layout_height="164dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="173dp"
+        android:layout_marginRight="173dp"
+        android:layout_marginBottom="152dp"
+
+        android:layout_x="9dp"
+        android:layout_y="291dp"
+        android:choiceMode="multipleChoice" >
+
+    </ListView>
+
+</AbsoluteLayout>
